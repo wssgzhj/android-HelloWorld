@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">HelloWorld</string>
+
+    <string name="app_name">酷食</string>
+
+    <!-- GuideFragment -->
+    <string name="guide_btn_enter">点击进入</string>
+
+    <!-- TabBarView -->
+    <string name="tab_bar_tv_home">首页</string>
+    <string name="tab_bar_tv_order">订单</string>
+    <string name="tab_bar_tv_me">我的</string>
+
 </resources>

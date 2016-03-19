@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="helloworld.zhj.me.helloworld"
-          xmlns:android="http://schemas.android.com/apk/res/android"
-          android:installLocation="auto"
-          android:versionCode="100"
-          android:versionName="1.0.0">
+<manifest
+    package="helloworld.zhj.me.helloworld"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:installLocation="auto"
+    android:versionCode="100"
+    android:versionName="1.0.0">
 
     <uses-sdk
         android:minSdkVersion="14"
         android:targetSdkVersion="23"/>
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
+        android:name="helloworld.zhj.me.helloworld.MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -22,6 +26,13 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity
+            android:name=".activities.MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"/>
+        <activity
+            android:name=".activities.OrderDetailActivity"
+            android:configChanges="orientation|keyboardHidden"/>
     </application>
 
 </manifest>
